@@ -1,4 +1,4 @@
-let n1 = ""
+/* let n1 = ""
 let n2 = ""
 let metodo = ""
 let resulta = ""
@@ -26,4 +26,13 @@ function calcular(ev) {
         resulta = n1 / n2
         window.alert(`${resulta}`)
     }
+}
+__________________
+A Antiga interação
+*/
+
+
+//A nova interação
+function displaynum(n1){
+    calculator.text1.value = calculator.text1.value + n1
 }
