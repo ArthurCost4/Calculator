@@ -1,33 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <script src="../js/calculadora.js"></script>
-</head>
-<body>
-    <main>
-        <div>
-            <h1>Calculando</h1>
-            <p>Digite um numero:</p>
-            <input type="number" name="num1" id="num1">
-        
-            <p>Forma de calculo:</p>
-            <select name="forma" id="forma">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="/">/</option>
-                <option value="*">*</option>
-            </select>
-            <p>Digite outro numero:</p>
-            <input type="number" name="num2" id="num2">
-            <input type="button" value="submit" onclick="calcular()">
-        </div>
-    </main>
-</body>
-</html>   Antiga calculadora-->
 
 <!-- A ATUALIZADA, MAIS LEVE E PRATICA-->
 <!DOCTYPE html>
@@ -45,31 +15,47 @@
 
         <section>
             <header>
-                <h1>Calculator</h1>
-                <h2>A basic calculator make with HTML5, CSS3 and JavaScript</h2>
+                <h1>A basic calculator make with HTML5, CSS3 and JavaScript</h1>
             </header>
 
-            <form action="" name="calculator">
+            <form action="" name="calculator" class="calculadora">
+                <div class="cabeçario-calculadora">
 
-                <input type="text" value="" name="text1" id="text1" onclick="">
-                <input type="text" value="c" name="text12" id="text12" onclick="location.reload()"><br>
+                    <h2 class="cabeçalho-h2">Calculator</h2>
 
-                <input type="button" value="9" name="btn9" id="nummain" onclick="displaynum(btn9.value)">
-                <input type="button" value="8" name="btn8" id="nummain" onclick="displaynum(btn8.value)">
-                <input type="button" value="7" name="btn7" id="nummain" onclick="displaynum(btn7.value)">
-                <input type="button" value="+" name="operatoradd" id="operatoradd" onclick="displaynum(operatoradd.value)"><br>
-                <input type="button" value="6" name="btn6" id="nummain" onclick="displaynum(btn6.value)">
-                <input type="button" value="5" name="btn5" id="nummain" onclick="displaynum(btn5.value)">
-                <input type="button" value="4" name="btn4" id="nummain" onclick="displaynum(btn4.value)">
-                <input type="button" value="-" name="operatorsub" id="operatorsub" onclick="displaynum(operatorsub.value)"><br>
-                <input type="button" value="3" name="btn3" id="nummain" onclick="displaynum(btn3.value)">
-                <input type="button" value="2" name="btn2" id="nummain" onclick="displaynum(btn2.value)">
-                <input type="button" value="1" name="btn1" id="nummain" onclick="displaynum(btn1.value)">
-                <input type="button" value="*" name="operator" id="operator" onclick="displaynum(operator.value)"><br>
-                <input type="button" value="." name="btnpoint" id="nummain" onclick="displaynum(btnpoint.value)">
-                <input type="button" value="0" name="btn0" id="nummain" onclick="displaynum(btn0.value)">
-                <input type="button" value="=" name="btnequal" id="nummain" onclick="text1.value = eval(text1.value)">
-                <input type="button" value="/" name="operatordivision" id="operatordivision" onclick="displaynum(operatordivision.value)"><br>
+                    <input type="text" value="" name="text1" id="text1" onclick="" class="box-number">
+
+                    <input type="text" value="c" name="text12" id="text12" onclick="location.reload()" class="box-reset"><br>
+
+                </div>
+
+                <div class="box-colection-number">
+                    <input type="button" value="9" name="btn9" id="nummain" onclick="displaynum(btn9.value)" class="box-number-input">
+                    <input type="button" value="8" name="btn8" id="nummain" onclick="displaynum(btn8.value)" class="box-number-input">
+                    <input type="button" value="7" name="btn7" id="nummain" onclick="displaynum(btn7.value)" class="box-number-input">
+                    <input type="button" value="+" name="operatoradd" id="operatoradd" onclick="displaynum(operatoradd.value)" class="box-operator-input"><br>
+                </div>
+
+                <div class="box-colection-number">
+                    <input type="button" value="6" name="btn6" id="nummain" onclick="displaynum(btn6.value)" class="box-number-input">
+                    <input type="button" value="5" name="btn5" id="nummain" onclick="displaynum(btn5.value)" class="box-number-input">
+                    <input type="button" value="4" name="btn4" id="nummain" onclick="displaynum(btn4.value)" class="box-number-input">
+                    <input type="button" value="-" name="operatorsub" id="operatorsub" onclick="displaynum(operatorsub.value)" class="box-operator-input"><br>
+                </div>
+
+                <div class="box-colection-number">
+                    <input type="button" value="3" name="btn3" id="nummain" onclick="displaynum(btn3.value)" class="box-number-input">
+                    <input type="button" value="2" name="btn2" id="nummain" onclick="displaynum(btn2.value)" class="box-number-input">
+                    <input type="button" value="1" name="btn1" id="nummain" onclick="displaynum(btn1.value)" class="box-number-input">
+                    <input type="button" value="*" name="operator" id="operator" onclick="displaynum(operator.value)" class="box-operator-input"><br>
+                </div>
+
+                <div class="box-colection-number">
+                    <input type="button" value="." name="btnpoint" id="nummain" onclick="displaynum(btnpoint.value)" class="box-operator-input">
+                    <input type="button" value="0" name="btn0" id="nummain" onclick="displaynum(btn0.value)" class="box-number-input">
+                    <input type="button" value="=" name="btnequal" id="nummain" onclick="text1.value = eval(text1.value)" class="box-operator-input">
+                    <input type="button" value="/" name="operatordivision" id="operatordivision" onclick="displaynum(operatordivision.value)" class="box-operator-input"><br>
+                </div>
 
             </form>
         </section>

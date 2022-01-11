@@ -1,29 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap');
 
 
-main {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(45deg, rgb(63, 11, 83), rgb(74, 49, 100), rgb(40, 36, 41));
-    color: lightgoldenrodyellow;
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
 }
 
-header h1{
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    font-size: 200%;
+.calculadora {
+    position: absolute;
+    background-color: aquamarine;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 28rem;
+    width: 18rem;
 }
-
-header h2 {
+.cabeçario-calculadora{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     align-items: flex-start;
-    font-size: 115%;
 }
-
-input{
-    color: rgb(66, 66, 66);
+.cabeçalho-h2 {
+    padding: 0.5rem;
+}
+.box-number{
+    height: 30px;
+    padding: 1rem 2rem;
+    margin: 0.7rem;
+    border-radius: 10px;
+    border: 2px solid pink;
+}
+.box-reset{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.7rem;
+    border-radius: 10px;
+    border: 2px solid pink;
+}
+.box-colection-number {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.box-number-input {
+    width: 4rem;
+    height: 4rem;
+    background-color: slategray;
+    margin: 1px;
+}
+.box-operator-input {
+    width: 4rem;
+    height: 4rem;
+    margin: 1px;
+    background-color: rgb(83, 115, 148);
 }
